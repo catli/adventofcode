@@ -85,8 +85,10 @@ def read_directions(directions):
 # read the input and output coordinate
 with open ("input", "r") as input:
     data=input.read()
-    new_data = data.split(', ')
-    new_direction = read_directions(new_data)
+    new_data = data.split(' ')
+    for i in new_data:
+        print i
+        print '--NEXT LINE--'
 
 # Final coordinates [164, -136]
 # 164 + 136 = 300 blocks
